@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
+.root {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  border-radius: 5px;
+  padding: 0 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  &__twitter {
+    width: 40px;
+    margin-right: 10px;
+  }
+  &__title {
+    color: rgb(19, 17, 15);
+    font-size: 18px;
+    font-family: "Rubik Glitch", cursive;
+  }
+}
+
+.buttons {
+  position: relative;
+  button {
+    margin-left: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+.menu__wrapper {
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 55px;
+  right: 17px;
+  width: 150px;
+  background-color: #505050;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #505050;
+}
+
+.link__posts {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  color: #dedede;
+  &:hover {
+    color: white;
+  }
+}
+.link__out {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: transparent;
+  color: #dedede;
+  &:hover {
+    color: white;
+  }
+}
+.link__acc {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: transparent;
+  color: #dedede;
+  &:hover {
+    color: white;
+  }
+}
+.cross {
+  position: absolute;
+  top: 0;
+  right: -23px;
+  cursor: pointer;
+  &:hover {
+    color: #505050;
+  }
+}
+
+.userMenu {
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: Helvetica, sans-serif;
+  color: #727272;
+  font-size: 12px;
+}
