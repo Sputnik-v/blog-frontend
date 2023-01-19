@@ -30,21 +30,25 @@ export const Index = ({ id, newFetchComments }) => {
   return (
     <>
       <div className={styles.root}>
-        <Avatar classes={{ root: styles.avatar }} src={userData.avatar} />
-        <div className={styles.form}>
-          <TextField
-            label="Написать комментарий"
-            variant="outlined"
-            maxRows={10}
-            multiline
-            fullWidth
-            value={state}
-            onChange={(e) => writeComm(e)}
-          />
-          <Button variant="contained" onClick={pushComment}>
-            Отправить
-          </Button>
-        </div>
+        {userData ? (
+          <>
+            <Avatar classes={{ root: styles.avatar }} src={userData.avatar} />
+            <div className={styles.form}>
+              <TextField
+                label="Написать комментарий"
+                variant="outlined"
+                maxRows={10}
+                multiline
+                fullWidth
+                value={state}
+                onChange={(e) => writeComm(e)}
+              />
+              <Button variant="contained" onClick={pushComment}>
+                Отправить
+              </Button>
+            </div>
+          </>
+        ) : null}
       </div>
     </>
   );
