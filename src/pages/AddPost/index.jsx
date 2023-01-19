@@ -53,7 +53,7 @@ export const AddPost = () => {
 
       const fields = {
         title,
-        image: image ? image : `http://localhost:3001${image}`,
+        image: image ? image : `process.env.REACT_APP_API_URL${image}`,
         author,
         text: value,
       };
